@@ -1,0 +1,356 @@
+*{
+
+    background-repeat: no-repeat;
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+    font-family: sans-serif;
+    overflow-x: initial !important;
+}
+
+html, body {
+    overflow-x: hidden;
+    position: relative;
+}
+
+nav{
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    justify-content:  space-around;
+    align-items: center;
+    min-height: 8vh;
+    background-color: #232323;
+    transition: top 0.3s; 
+}
+
+
+.centideo{
+    color: #ff0000;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    font: 20px;
+    font-weight: bold;
+    user-select: none;
+}
+
+.navlink{
+    display: flex;
+    justify-content: space-around;
+    width: 40%
+
+}
+
+.navlink li{
+    list-style: none;
+}
+
+.navlink a{
+    color: #c1c1c1;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.mobilenav{
+    display: none;
+    cursor: pointer;
+}
+
+.mobilenav div{
+    width: 20px;
+    height: 3px;
+    margin: 3px;
+    background-color: #ff0000;
+    
+}
+
+
+@media screen and (min-width:1500px) {
+   
+    h1{
+        font-size: 48px;
+    }
+     
+    h2{
+        font-size: 18px;
+    }
+
+    .navlink{
+        font-size: 18px;
+    }
+
+    .centideo{
+        font-size: 18px;
+    }
+ }
+
+@media screen and (min-width:1900px) {
+   
+    h1{
+        font-size: 64px;
+    }
+     
+    h2{
+        font-size: 38px;
+    }
+
+    .navlink{
+        font-size: 24px;
+    }
+
+    .centideo{
+        font-size: 24px;
+    }
+ }
+
+
+@media screen and (max-width:750px) {
+   
+    .navlink{
+        width: 45%
+    }
+     
+ }
+
+
+@media screen and (max-width:645px) {
+    body{
+        overflow-x: hidden;
+        width: 100%;
+    }
+    .navlink{
+    overflow-x: hidden;
+    position: absolute;
+    right: 0px;
+       height: 92vh;
+    top: 8vh;
+    background-color: #232323;
+    width: 40%;
+    flex-direction: column;
+    align-items: center;
+    transition: transform 0.5s ease-in;
+    transform: translateX(100%)
+   }
+    
+   .navlinkli{
+    opacity: 0;
+   }
+
+   .mobilenav {
+    display: block;
+   
+   }
+}
+
+.nav-active{
+    
+    transform: translateX(0%);
+}
+
+.motivation{
+    margin: 0%;
+    display: flex;
+    color: #ffffff;
+    justify-content: space-around;
+    margin-top: 13vh;
+    padding-left: 5%;
+    padding-right: 25%;
+    padding-top: 10vh;
+    padding-bottom: 10vh;
+    background-position: right;
+    background-image: url("horzBg.jpg");
+    width: 80%;
+    height: 80vh;
+    flex-direction: column;
+    background-color: black;
+    max-height: 1000px;
+    background-size: 50%;
+}
+
+.motivation1 {
+    margin: 0%;
+    display: flex;
+    color: black;
+    justify-content: space-around;
+    margin-top: 13vh;
+    padding-left: 5%;
+    padding-right: 25%;
+    padding-top: 10vh;
+    padding-bottom: 10vh;
+    background-position: right;
+    background-image: url("auschwitz.jpg");
+    width: 80%;
+    height: 80vh;
+    flex-direction: column;
+    background-color: black;
+    max-height: 1000px;
+    background-size: 50%;
+}
+
+.motivation2 {
+    margin: 0%;
+    display: flex;
+    color: black;
+    justify-content: space-around;
+    margin-top: 13vh;
+    padding-left: 5%;
+    padding-right: 25%;
+    padding-top: 10vh;
+    padding-bottom: 10vh;
+    background-position: right;
+    background-image: url("samurai.jpg");
+    width: 80%;
+    height: 80vh;
+    flex-direction: column;
+    background-color: black;
+    max-height: 1000px;
+    background-size: 50%;
+}
+
+
+
+.bobo{
+    height:92vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+@media screen and (max-width:768px) {
+    .motivation {
+        width: 85%;
+        background-image: url('horzBg.jpg');
+        background-position: top;
+        background-size: 85%;
+        color: white;
+    }
+}
+@media screen and (max-width:768px) {
+    .motivation1 {
+        width: 85%;
+        background-image: url('auschwitz.jpg');
+        background-position: top;
+        background-size: 85%;
+        color: white;
+    }
+}
+
+@media screen and (max-width:768px) {
+    .motivation2 {
+        width: 85%;
+        background-image: url('samurai.jpg');
+        background-position: top;
+        background-size: 85%;
+        color: white;
+    }
+}
+
+
+
+.contact{
+    color: #C4c4c4;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: black;
+    width: 80%;
+    height: 80vh;
+}
+
+.flex{
+    display: flex;
+} 
+@media screen and (max-width:768px) {
+    .despre {
+        width: 85%;
+        background-image: url('horzBg.jpg');
+        background-position: top;
+        background-size: 85%;
+    }
+}
+
+.centerres{
+  justify-content: space-around;
+
+}
+
+.flexwrap{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+input[type="text"] {
+    max-width: 40vw;
+}
+
+h1, h2, .actual{
+    color:rgb(255, 0, 0) !important;
+}
+.cont1{
+    margin-top: 16vh;
+}
+.cont1, .cont2{
+  font-size: x-large;
+  display: flex;
+  color: black;
+  width: 40vw;
+  height: 40vh;
+  align-items: center;
+  
+}
+
+.item1{
+text-align: center;    
+display: flex;
+    align-items: center;
+    background-color: #C1c1c1;
+    width: 50%;
+    height: 100%;
+}
+.item2{
+    text-align: center; 
+    display: flex;
+    align-items: center;
+    background-color: #616161;
+    width: 50%;
+    height: 100%;
+}
+.item3{
+    text-align: center; 
+    display: flex;
+    align-items: center;
+    background-color: #616161;
+    width: 50%;
+    height: 100%;
+}
+.item4{
+    text-align: center; 
+    display: flex;
+    align-items: center;
+    background-color: #C1c1c1;
+    width: 50%;
+    height: 100%;
+}
+
+.Quotes {
+    display: flex;
+}
+
+ul, li{
+    list-style: none; 
+}
+
+.japan{
+    background-image: url('Flag_of_Japan_\(1870–1999\).svg.png');
+    background-repeat: repeat !important;
+}
+
+.spatiu{
+    display: flex;
+    height: 12vh;
+}
